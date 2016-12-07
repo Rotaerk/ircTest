@@ -2,7 +2,6 @@
 
 module Main where
 
-import Lib
 import Control.Applicative
 import Control.Concurrent (threadDelay, forkIO, killThread)
 import Control.Monad.IO.Class
