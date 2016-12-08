@@ -4,13 +4,10 @@
 name: ircTest
 version: 0.1.0.0
 synopsis: A spike solution testing interaction with an IRC server from haskell using pipes.
--- description: 
 license: BSD3
 license-file: LICENSE
 author: Matthew Stewart
 maintainer: m.scott.stewart@gmail.com
--- copyright: 
-category: Testing
 build-type: Simple
 cabal-version: >=1.10
 
