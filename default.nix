@@ -1,2 +1,4 @@
 { nixpkgs ? import <nixpkgs> {}, compiler ? "ghc801" }:
-nixpkgs.pkgs.haskell.packages.${compiler}.callPackage ./ircTest.nix {}
+with nixpkgs.pkgs.haskell;
+lib.overrideCabal (packages.${compiler}.callPackage ./ircTest.nix {})
+  (drv: { src = builtins.filterSource (path: type: baseNameOf path != ".git") drv.src; })
